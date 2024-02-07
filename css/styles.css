@@ -160,7 +160,7 @@ header {
 /* Navigation styling*/
 .navigation-list {
     list-style-type: none;
-    padding: 30px;
+    padding: 20px;
     text-align: right;
 }
 
@@ -204,10 +204,10 @@ header {
     display: flex;
     width: 100%;
     padding: 1vh;
-    margin:40px 0px 30px 0px;
+    margin:20px 0px 30px 0px;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .laptop_entire-graphic{ 
@@ -444,44 +444,7 @@ thead {
     }
 }
 
-/* Styling and Animation for Profile Graphic*/
 
-#laptop-main__animation {
-    animation: MoveUpDown 3s linear infinite;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-#laptop_large-purple-circle{
-    animation: MoveUpDown 4s ease infinite;
-    position: absolute;
-    left: 0;
-    bottom: 0; 
-}
-
-#laptop_small-blue-circle {
-    animation: MoveUpDown 5s ease infinite;
-    position: absolute;
-    left: 0;
-    bottom: 0; 
-}
-
-#laptop_large-blue-circle {
-    animation: MoveUpDown 6s ease infinite;
-    position: absolute;
-    left: 0;
-    bottom: 0;  
-}
-
-@keyframes MoveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-15px);
-    }
-}
 
 
   @media all and (max-width: 500px) {
