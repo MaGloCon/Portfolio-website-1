@@ -6,6 +6,7 @@
     --secondary-color-low-opacity: rgba(255, 255, 225, 0.8);
     --secondary-color-high-opacity: rgba(255, 255, 255, 0.337);
     --purple-opaque:rgba(240, 120, 255, 0.6); /*paired with 'mix-blend-mode: screen;'*/
+    --purple-solid: rgba(240, 120, 255, 1);
     --gradient-color-1:#ee7752;
     --gradient-color-2:#e73c7e;
     --gradient-color-3:#23a6d5;
@@ -68,23 +69,24 @@ a:active {
 Button and button states styling.
 */
  
-button, .button, input, textarea {
+button, .button {
     display: inline-block;
     font-family: var(--primary-font-family);
-    background-color: var(--purple-opaque);
+    background-color: var(--gradient-color-3);
     mix-blend-mode: screen;
     color: var(--secondary-color);
     text-decoration: none;
     padding: 15px;
     border-radius: 3px;
     border: 2px solid var(--secondary-color-high-opacity);
-    transition-duration: 0.3s;
-    transition-property: opacity;
+    transition-duration: 0.8s;
+    transition-property: scale;
   }
 
   button:hover, button:focus, .button:hover, .button:focus {
+    background: var(--purple-solid);
     cursor: pointer;
-    opacity: 0.8;
+    scale: 1.05;
   }
 
   input, textarea {
@@ -241,7 +243,6 @@ header {
 
 /*correct positioning*/
 .call-to-action__main {
-    display: inline-block;
     width: 100%;
     margin: 40px 0px;
     
@@ -363,7 +364,6 @@ thead {
     padding: 20px;
     margin: 20px;
     border: 2px solid var(--secondary-color-high-opacity);
-
 }
 
 #contact-form input, #contact-form textarea {
@@ -379,11 +379,21 @@ thead {
     text-align: center;
 }
 
-#send-message {
+input[type="submit"] {
     width: 30px;
-    background-color: rgba(240, 120, 255, 0.6);
-    mix-blend-mode: screen;
+    background-color: var(--gradient-color-3);
+    text-align: center;
+    transition: 0.8s;
 }
+
+
+ input.send-message:hover{
+    background-color: var(--purple-solid);
+    color: var(--secondary-color);
+    cursor: pointer;
+    opacity: 0.8;
+    scale: 1.05;
+ }
 
 /*///////////////////////////
 *Work.html*
