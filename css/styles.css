@@ -455,11 +455,13 @@ input.send-message:hover{
         grid-template-columns: 1fr;
     }
   }
+
   @media all and (min-width: 500px) and (max-width: 750px){
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
   }
+  
   @media all and (max-width: 750px) {
     .project-list {
       grid-gap: 10px;
