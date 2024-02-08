@@ -389,11 +389,11 @@ thead {
 }
 
 .contact_send-message {
-    width: 35%;
+    width: 100%;
     text-align: center;
 }
 
-input.send-message {
+.send-message {
     background-color: var(--purple-opaque);
     text-align: center;
     padding: 15px;
