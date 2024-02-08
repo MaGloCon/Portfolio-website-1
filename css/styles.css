@@ -314,8 +314,11 @@ thead {
     margin: 10px auto;
     margin-bottom: 40px;
 }
-
-.contact-info {
+.contact-info__container, .contact-form__container {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--secondary-color);
+}
+.contact-info__container {
     width: 70%;
     padding: 20px;
     padding-top: 0;
