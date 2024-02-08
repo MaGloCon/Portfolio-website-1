@@ -23,7 +23,7 @@
 }
 
 
-/* Body and Headings Styling*/
+/* General Styling */
 body {
     background-color: var(--primary-color); /*fallback*/
     background: linear-gradient(-45deg, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-3), var(--gradient-color-4));
@@ -42,11 +42,7 @@ main {
     padding: 20px;
 }
 
-
-/*
- Link styling
- */
-
+/* General Link Styling */
 a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -62,13 +58,10 @@ a.hover, a:focus{
 
 a:active {
     color: var(--secondary-color);
-  }
+}
 
   
-  /*  
-Button and button states styling.
-*/
- 
+/* Button and button states styling */
 button, .button {
     display: inline-block;
     font-family: var(--primary-font-family);
@@ -80,16 +73,16 @@ button, .button {
     border-radius: 3px;
     border: 2px solid var(--secondary-color-high-opacity);
     transition-duration: 0.8s;
-  }
+}
 
-  button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
     background: var(--purple-solid);
     cursor: pointer;
     opacity: 0.8;
     scale: 1.05;
-  }
+}
 
-  input, textarea {
+input, textarea {
     display: inline-block;
     font-family: var(--primary-font-family);
     background-color: var(--secondary-color-high-opacity);
@@ -101,15 +94,15 @@ button, .button {
     border: 2px solid var(--secondary-color-high-opacity);
     transition-duration: 0.3s;
     transition-property: opacity;
-  }
+}
   
 /* Table styling*/
-  table, th, td {
+table, th, td {
     border: 1px solid;
     border-collapse: collapse;
     width: 100%;
     text-align: center;
-  }
+}
 
 th, td {
     padding: 15px;
@@ -123,7 +116,7 @@ tr:hover {
     background-color: var(--secondary-color-high-opacity);
 }
 
-/* Header Styling*/
+/* Header Styling */
 header {
     display: flex;
     width: 100%;
@@ -153,7 +146,7 @@ header {
     flex-grow: 1;
 }
 
-/* Navigation styling*/
+/* Navigation styling */
 .navigation-list {
     list-style-type: none;
     padding: 20px;
@@ -196,7 +189,7 @@ header {
 *Index.html*
 //////////////////////////*/
 
-/* Home Greeting styles*/
+/* Home Greeting Styles */
 .profile {
     display: flex;
     width: 100%;
@@ -240,14 +233,10 @@ header {
 /*correct positioning*/
 .call-to-action__main {
     width: 100%;
-    margin: 40px 0px;
-    
-    
+    margin: 40px 0px;  
 }
 
-/*  
-Footer styling.
-*/
+/* Footer Styling */
 .page-footer {
     background-color: #242526;
     color: var(--secondary-color);
@@ -263,21 +252,21 @@ Footer styling.
     color: var(--secondary-color);
     text-align: center;
     text-decoration: none;
-  }
+}
 
-  .page-footer a:hover, .page-footer a:focus {
+.page-footer a:hover, .page-footer a:focus {
     text-decoration: underline;
-  }
+}
 
-  .social-media {
+.social-media {
     display: flex;
     justify-content: center;
     padding: 5px;
-  }
+}
 
-  .social-media a:hover, .social-media a:focus {
+.social-media a:hover, .social-media a:focus {
     opacity: 0.8;
-  }
+}
 
 .social-media-icons {
     width: 50px;
@@ -288,7 +277,6 @@ Footer styling.
 /*///////////////////////////
 *About.html*
 //////////////////////////*/
-
 .about-main{
     width: 100%;
     padding: 1vh;
@@ -297,9 +285,9 @@ Footer styling.
 .about-text {
     max-width: 55%;
     padding: 30px;
-    margin: auto;
-    
+    margin: auto; 
 }
+
 #about-table {
     max-width: 100%;
     table-layout: fixed;
@@ -327,6 +315,7 @@ thead {
     margin: 10px auto;
     margin-bottom: 40px;
 }
+
 .contact-info {
     width: 70%;
     padding: 20px;
@@ -340,6 +329,7 @@ thead {
     font-size: 18px;
     line-height: 2;
 }
+
 .contact-info a {
     text-decoration: underline; 
 }
@@ -354,6 +344,7 @@ thead {
     text-align: center;
     text-decoration: none;
 }
+
 .contact-form__container {
     flex-grow: 1;
     width: 100%;
@@ -369,9 +360,11 @@ thead {
     border-radius: 5px;
     border: 2px solid var(--secondary-color-high-opacity);
 }
+
 .singe-line-input {
     height: 40px;
 }
+
 .name-container {
     display: flex;
     width: 100%;
@@ -402,7 +395,7 @@ input.send-message:hover{
     cursor: pointer;
     opacity: 0.8;
     scale: 1.05;
- }
+}
 
 /*///////////////////////////
 *Work.html*
@@ -439,7 +432,7 @@ input.send-message:hover{
     }
 }
 
-/* Animation for background*/
+/* Animation for Background */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -454,7 +447,7 @@ input.send-message:hover{
 
 
 
-
+/* Media Queries */
   @media all and (max-width: 500px) {
     .project-list {
         grid-template-columns: 1fr;
