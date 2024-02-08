@@ -328,7 +328,8 @@ thead {
     flex-direction: row;
     justify-content: space-evenly;
     width: 70%;
-    margin: 20px auto;
+    margin: 10px auto;
+    margin-bottom: 40px;
 }
 .contact-info {
     width: 70%;
@@ -373,20 +374,23 @@ thead {
     border: 2px solid var(--secondary-color-high-opacity);
 }
 
+.singe-line-input {
+    height: 40px;
+}
+
 .contact_send-message {
     width: 35%;
-    height: auto;
     text-align: center;
 }
 
-input[type="submit"] {
+input.send-message {
     background-color: var(--purple-opaque);
     text-align: center;
+    padding: 15px;
     transition: 0.8s;
 }
 
-
- input.send-message:hover{
+input.send-message:hover{
     background-color: var(--purple-solid);
     color: var(--secondary-color);
     cursor: pointer;
